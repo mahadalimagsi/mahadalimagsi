@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script type="text/javascript">
+		function checking()
+		{
+			var color;
+			color = document.getElementById('input').value;
+			alert(color);
+			if(color == "Red")
+				document.getElementById('output').style.backgroundColor= "red";
+			else if(input == "Blue")
+				document.getElementById('output').style.backgroundColor= "blue";
+			else if(input == "Green")
+				document.getElementById('output').style.backgroundColor= "green";
+		}
+
+	</script>
+</head>
+<body>
+
+<select onchange="checking()" id="input">
+	<option value="Red">Red</option>
+	<option value="Blue">Blue</option>
+	<option value="Green">Green</option>
+</select>
+<div style="height: 100px; width: 100px; background-color: red; border: 1px; border-color: black; border-style: solid;" id="output"></div>
+</body>
+</html>
